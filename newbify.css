@@ -1,0 +1,287 @@
+body {
+    background: rgb(222, 230, 233);
+    margin: 0.5em;   
+   }
+   .brand img {
+       position: fixed;
+       margin-left: 6em;
+       margin-top: 2.5em;
+       width: 150px;
+       border-radius: 50%;
+       border: transparent;
+       animation: movedown 0.5s linear 1;
+       animation-delay: 1s;
+       visibility: hidden;
+       animation-fill-mode: forwards;
+   }
+
+   @keyframes movedown{
+    0% {
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0px);
+        visibility: visible;
+    }
+   }
+
+   nav ul{
+       position: fixed;
+       list-style-type: none;
+       display: flex;
+       flex-direction: row;
+       padding-left: 65%;
+       top: 3em;
+       font-size: 24px;
+       font-family: cursive;
+       color: darkblue;
+       cursor: pointer;
+       overflow: hidden;
+       z-index: 1000;
+   }
+   nav ul li {
+       padding-left: 20px;
+       margin-top: 0.5em;
+   }
+   li {
+    display: block;
+    padding-left: 5em;
+   }
+   .explore li:hover {
+    color: rgb(4, 4, 87);
+    text-decoration: rgb(3, 3, 84) underline;
+   }
+   li a:hover:not(.active) {
+    background-color: cornflowerblue;
+   }
+   nav ul i{
+       padding-left: 2.5em;
+       margin-top: 0.6em;
+       cursor: auto;
+   }
+   .search-box {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 256px;
+       margin-top: -15em;
+   }
+   .search-bar {
+       max-width: 50px;
+       background: rgb(4, 36, 82);
+       display: flex;
+       align-items: center;
+       border-radius: 25px;
+       padding: 10px 270px;
+       backdrop-filter: blur(4px) saturate(180%);
+   }
+   .search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 130px 20px 80px;
+    font-size: 20px; 
+    margin-left: -11.5em;
+    color: white;
+   }
+   ::placeholder {
+    color: rgb(202, 213, 243);
+   }
+   .search-bar button i {
+    width: 35px;
+    color: rgb(14, 8, 53);
+    font-size: 18px;
+    cursor: pointer;
+   }
+   .search-bar button {
+    border: 0;
+    opacity: 100%;
+    border-radius: 50%;
+    max-width: 200%;
+    height: 45px;
+    margin-left: -3em;
+    background: rgb(183, 183, 234);
+   }
+   .side-img img {
+    width: 500px;
+    margin-top: -0.5em;
+    margin-left: 1010px;
+    z-index: -1;
+    opacity: 40%;
+   }
+   .img1 img {
+    width: 370px;
+    margin-left: 4em;
+    margin-top: 5em;
+    border-radius: 10%;
+    z-index: -1;
+    transform: rotate(325deg);
+    position: relative;
+    opacity: 50%;
+   }
+   .img2 img {
+    width: 365px;
+    margin-top: -17em;
+    margin-left: 6em;
+    border-radius: 10%;
+    z-index: -1;
+    transform: rotate(345deg);
+    position: relative;
+   }
+   .text {
+    margin-top: -9em;
+    margin-left: 12em;
+    font-size: 30px;
+    color: rgb(13, 41, 41);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   .text img {
+    margin-left: 19em;
+    margin-top: 2em;
+   }
+   .text p {
+    display: flex;
+    font-family: cursive;
+    color: whitesmoke;
+    font-size: 22px;
+    margin-top: -14em;
+    margin-left: -4.5em;
+    background-image: linear-gradient(320deg, rgb(24, 6, 84), rgb(46, 67, 103), rgb(49, 49, 125));
+    padding: 60px 50px;
+    width: 40%;
+    border-radius: 25px;
+   }
+   hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: rgb(4, 59, 80);
+    border-width: 6px;
+    margin-left: 12em;
+    margin-top: 5em;
+    width: 8%;
+   }
+   .explore .button {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(4, 4, 64), rgb(64, 3, 64), rgb(95, 6, 95));
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 4rem;
+    cursor: pointer;
+   }
+   .explore a:hover {
+    opacity: 70%;
+   }
+   h1 {
+    font-size: 45px;
+    color: rgb(39, 4, 72);
+    margin-left: 6em;
+    margin-top: -4em;
+   }
+   .big-container li {
+    font-size: 18px;
+   }
+   .ph img {
+    width: 400px;
+    border-radius: 25px;
+    margin-left: 850px;
+    margin-top: -12em;
+    position: relative;
+    z-index: 10;
+   }
+   .ph5 img {
+    width: 700px;
+    margin-left: 700px;
+    margin-top: -4em;
+    z-index: -1;
+   }
+   .ph3 img {
+    border-radius: 50%;
+    width: 330px;
+    margin-top: -16em;
+    margin-left: 1150px;
+    z-index: 30;
+    position: relative;
+   }
+   h2 {
+    color: rgb(7, 7, 78);
+   }
+   .illustrations {
+    margin-top: -29em;
+   } 
+   .text-2 {
+    @font-face {
+        font-family: crimson;
+        src: url(Fonts/CrimsonText-Regular.ttf);
+    }
+    font-size: 22px;
+    width: 35%;
+    align-items: center;
+    color: whitesmoke;
+    margin: 10em;
+    margin-left: 35em;
+    background-image: linear-gradient(320deg, rgb(68, 3, 89), rgb(106, 8, 145), rgb(56, 31, 90), rgb(38, 5, 91));
+    height: 130px;
+    border-radius: 25px;
+    padding: 20px;
+   }
+   .text-2 img {
+    border-radius: 35px;
+    margin-top: -13em;
+    margin-left: -30rem;
+    width: 370px;
+    z-index: -1;
+    position: relative;
+   }
+   .about {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(9, 5, 59), rgb(10, 17, 104));
+    color: white;
+    height: 300px;
+    border-radius: 25px;
+   }
+   .about li{
+    padding: 50px;
+    margin-left: 5em;
+    font-size: 20px;
+   }
+   .about img {
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 8em;
+   }
+   .about h3 {
+    margin-left: 25em;
+    margin-top: -6em;
+   }
+   .about h4 {
+    margin-left: 1100px;
+    border: 0.9px solid yellow;
+    width: 230px;
+    margin-top: -6em;
+    padding: 20px;
+    position: relative;
+   }
+  .about footer a {
+    display: flex;
+    color: white;
+    padding-left: 450px;
+    margin-top: 1.7em;
+    position: relative;
+  }
+
+  span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+  }
+  span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+    color:  rgba(13, 6, 99, 0.949);
+  }
